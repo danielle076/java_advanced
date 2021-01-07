@@ -1,6 +1,6 @@
 package Methods;
 
-public class ContinueMainBasicTwo {
+public class ContinueMainTwo {
     public static void main(String[] args) {
         calculateScore3(true, 500, 4, 500); // Your final score was 3500
         calculateScore3(true, 1000, 2, 100); // Your final score was 2200

@@ -1,6 +1,6 @@
 package Methods;
 
-public class MainBasic {
+public class Main {
 
     public static void main(String[] args) {
         // a method ensures that you only need to write a code once and can reuse it every time
