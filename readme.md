@@ -5,6 +5,6 @@
 3. Method Overloading + challenge
 4. Switch + challenges
 5. For Statement + challenges
-6. While and Do While
+6. While and Do While + challenges
 
 
