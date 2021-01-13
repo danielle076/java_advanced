@@ -7,5 +7,6 @@
 5. For Statement + challenges
 6. While and Do While + challenges
 7. Parsing values from String
+8. Reading User Input
 
 
