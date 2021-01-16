@@ -8,5 +8,6 @@
 6. While and Do While + challenges
 7. Parsing values from String
 8. Reading User Input
+9. Class
 
 
