@@ -11,5 +11,6 @@
 9. Class
 10. Constructor
 11. Inheritance
+12. Array
 
 
