@@ -16,4 +16,5 @@
 14. Composition
 15. Encapsulation
 16. Polymorphism
+17. Scope
 
