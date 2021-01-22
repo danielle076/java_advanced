@@ -16,11 +16,12 @@
 14. Composition
 15. Encapsulation
 16. Polymorphism
-17. Interfaces    
-18. Packages
-19. Scope
-20. Access Modifiers + challenge
-21. Static Statement
-22. Final Statement
+17. Interfaces
+18. Abstract Classes
+19. Packages
+20. Scope
+21. Access Modifiers + challenge
+22. Static Statement
+23. Final Statement
 
 
