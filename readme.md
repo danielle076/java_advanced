@@ -23,5 +23,6 @@
 21. Access Modifiers + challenge
 22. Static Statement
 23. Final Statement
+24. Naming Conventions
 
 
