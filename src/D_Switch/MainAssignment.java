@@ -1,9 +1,10 @@
-package Switch;
+package D_Switch;
 
 public class MainAssignment {
 
     public static void main(String[] args) {
         char switchChar = 'C';
+
         switch (switchChar) {
             case 'A':
                 System.out.println("Letter was A");

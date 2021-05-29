@@ -1,4 +1,4 @@
-package Switch;
+package D_Switch;
 
 public class MainDayOfTheWeekAssignment {
     public static void main(String[] args) {
