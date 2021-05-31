@@ -28,6 +28,9 @@ Array always starts from the index 0.
 
 ![img.png](img.png)
 
+Querying the length of an array is simple using 'length':
+`int aantalWoningen = bakkerstreet.length`.
+
 ## Challenge
 
 Allow the user of the program to type in some numbers. We're going to sum up those total numbers, and figure out the
