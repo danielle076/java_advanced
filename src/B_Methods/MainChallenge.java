@@ -1,4 +1,4 @@
-package Methods;
+package B_Methods;
 
 public class MainChallenge {
 
@@ -30,7 +30,7 @@ public class MainChallenge {
                 + highScorePosition + " on the high score table");
     }
 
-    // it is important that you write >= instead of > because then people with 1000, 500 and 100 will all fall into place 4
+    // it is important that you write >= instead of > because people with 1000, 500 and 100 will all fall into place 4
     public static int calculateHighScorePosition(int playerScore) {
         if (playerScore >= 1000) {
             return 1;

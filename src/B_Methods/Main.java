@@ -1,4 +1,4 @@
-package Methods;
+package B_Methods;
 
 public class Main {
 

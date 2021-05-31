@@ -1,4 +1,4 @@
-package Methods;
+package B_Methods;
 
 public class ContinueMainOne {
     public static void main(String[] args) {
