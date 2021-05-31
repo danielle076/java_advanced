@@ -8,4 +8,12 @@ public class Loop {
             System.out.println("Karakter op positie: " + i + " is " + ch);
         }
     }
+
+    public String returnData(String data){
+        return data;
+    }
+
+    public void printData(String data){
+        System.out.println(returnData(data));
+    }
 }

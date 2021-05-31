@@ -9,31 +9,116 @@ In Java, we use objects and classes to organize data.
 - Always place a class in its OWN file with the same name
 - A class name always starts with a capital letter
 
-### Example class Person
+### Example class Loop
 
-    public class Person {
-        public String firstName;
-        public String lastName;
-    } 
-
-> Important: when you create a Person class, your file must be named Person.java.
-
-Two properties (attributes, variables) of type String:
-- firstName
-- lastName
-
-Added method getFullName():
+<i>Loop.java</i>
 
     package H_ClassAndObjects;
     
-    import java.util.*;
+    public class Loop {
     
-    public class Person {
-        public String firstName;
-        public String lastName;
-        public Calendar birthday;
+        public void loopCharacters(){
+            for(int i = -128; i < 127; i++) {
+                char ch = (char) i;
+                System.out.println("Karakter op positie: " + i + " is " + ch);
+            }
+        }
+    }
+
+<i>Main.java</i>
+
+With `Loop loop1 = new Loop();` you create a new object.
+
+    package H_ClassAndObjects;
+    
+    public class Main {
+    
+        public static void main(String[] args) {
+            Loop loop1 = new Loop();
+            loop1.loopCharacters();
+        }
+    }
+
+This is a `void` and returns no data. 
+
+<i>Loop.java</i>
+
+    package H_ClassAndObjects;
+    
+    public class Loop {
+    
+        public String returnData(){
+            return "Dit is een test! ";
+        }
+    }
+
+<i>Main.java</i>
+
+Met `loop1.returnData();` doet hij niets, je moet `System.out.println()` gebruiken
+
+    package H_ClassAndObjects;
+    
+    public class Main {
+    
+        public static void main(String[] args) {
+            Loop loop1 = new Loop();
+            System.out.println(loop1.returnData());
+        }
+    }
+
+Better to put `System.out.println()` in the Class, so as follows.
+
+<i>Loop.java</i>
+
+    package H_ClassAndObjects;
+    
+    public class Loop {
+    
+        public String returnData(){
+            return "Dit is een test! ";
+        }
         
-        public String getFullName() {
-           return firstName + "" + lastName;
+        public void printData(){
+            System.out.println(returnData());
+        }
+    }
+
+<i>Main.java</i>
+
+    package H_ClassAndObjects;
+    
+    public class Main {
+    
+        public static void main(String[] args) {
+            Loop loop1 = new Loop();
+            loop1.printData();
+        }
+    }
+
+Het is ook mogelijk om een `parameter` te hebben, waar we `data` aan mee kunnen geven.
+
+<i>Loop.java</i>
+
+    package H_ClassAndObjects;
+    
+    public class Loop {
+        public String returnData(String data){
+            return data;
+        }
+    
+        public void printData(String data){
+            System.out.println(returnData(data));
+        }
+    }
+
+<i>Main.java</i>
+
+    package H_ClassAndObjects;
+    
+    public class Main {
+    
+        public static void main(String[] args) {
+            Loop loop1 = new Loop();
+            loop1.printData("Dit is een tweede test");
         }
     }

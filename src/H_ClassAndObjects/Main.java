@@ -21,8 +21,11 @@ public class Main {
         porsche.setModel("Carrera");
         System.out.println("Model is " + porsche.getModel());
 
-        // example Loop.java
+        // example Loop.java - loopCharacters with void
         Loop loop1 = new Loop();
         loop1.loopCharacters();
+
+        // example Loop.java - returnData with return
+        loop1.printData("Dit is een tweede test");
     }
 }
