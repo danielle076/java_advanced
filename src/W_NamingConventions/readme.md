@@ -8,7 +8,7 @@ Java uses CamelCase as a practice for writing names of methods, variables, class
 * Class names should be <b>nouns</b>, in mixed case with the <b>first</b> letter of each internal word capitalised. Interfaces name should also be capitalised just like class names. 
 * Use whole words and must avoid acronyms and abbreviations.
 
-        interface  Bicycle
+        interface Bicycle
         class MountainBike implements Bicyle
         
         interface Sport
@@ -17,19 +17,19 @@ Java uses CamelCase as a practice for writing names of methods, variables, class
 <b>2. Methods</b>
 * Methods should be <b>verbs</b>, in mixed case with the <b>first letter lowercase</b> and with the first letter of each internal word capitalised.
 
-        void changeGear(int newValue);
-        void speedUp(int increment);
-        void applyBrakes(int decrement);
+        run ();
+        runFast();
+        getBackground();
 
 <b>3. Variables</b> Variable names should be short yet meaningful.
-* Variables can also start with either underscore(‘_’) or dollar sign ‘$’ characters.
+* Variables can start with either underscore(‘_’) or dollar sign ‘$’ characters, but not recommended
 * Should be mnemonic i.e, designed to indicate to the casual observer the intent of its use.
 * <b>One-character variable names should be avoided</b> except for temporary variables.
 * Common names for temporary variables are i, j, k, m, and n for integers; c, d, and e for characters.
 
-        // variables for MountainBike class
-        int speed = 0;
-        int gear = 1;
+        int i;
+        char c;
+        float myWidth;
 
 <b>4. Constant variables</b>
 * Should be all uppercase with words separated by underscores (“_”).
@@ -48,7 +48,8 @@ Java uses CamelCase as a practice for writing names of methods, variables, class
 
         com.sun.eng
         com.apple.quicktime.v2
-        
-        // java.lang packet in JDK
         java.lang
 
+<b>6. Source</b>
+
+See also: https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html
