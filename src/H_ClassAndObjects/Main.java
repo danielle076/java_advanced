@@ -20,5 +20,9 @@ public class Main {
         // calling the set model method for our object and updating it with the value Carrera
         porsche.setModel("Carrera");
         System.out.println("Model is " + porsche.getModel());
+
+        // example Loop.java
+        Loop loop1 = new Loop();
+        loop1.loopCharacters();
     }
 }
