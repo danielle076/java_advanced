@@ -1,4 +1,4 @@
-package Class;
+package H_ClassAndObjects;
 
 public class Car {
     // 'public class Car' means: the statement to create a new class with the name Car

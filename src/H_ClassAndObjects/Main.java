@@ -1,4 +1,4 @@
-package Class;
+package H_ClassAndObjects;
 
 public class Main {
 

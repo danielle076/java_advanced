@@ -8,7 +8,7 @@
 6. While and Do While + challenges
 7. Parsing values from String
 8. Reading User Input
-9. Class
+9. H_ClassAndObjects
 10. Constructor
 11. Inheritance
 12. Array + challenge
