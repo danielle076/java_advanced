@@ -2,11 +2,11 @@
 
 Java uses CamelCase as a practice for writing names of methods, variables, classes, packages and constants.
 
-<b>Camel case in Java Programming:</b> It consists of compound words or phrases such that each word or abbreviation begins with a capital letter or first word with a lowercase letter, rest all with capital.
+<i>Camel case in Java Programming:</i> It consists of compound words or phrases such that each word or abbreviation begins with a capital letter or first word with a lowercase letter, rest all with capital.
 
 <b>1. Classes and Interfaces </b>
 * Class names should be <b>nouns</b>, in mixed case with the <b>first</b> letter of each internal word capitalised. Interfaces name should also be capitalised just like class names. 
-* Use whole words and must avoid acronyms and abbreviations.
+* Use whole words and avoid acronyms and abbreviations.
 
         interface Bicycle
         class MountainBike implements Bicyle
@@ -22,10 +22,11 @@ Java uses CamelCase as a practice for writing names of methods, variables, class
         getBackground();
 
 <b>3. Variables</b> Variable names should be short yet meaningful.
-* Variables can start with either underscore(‘_’) or dollar sign ‘$’ characters, but not recommended
+* Variables can start with either underscore(‘_’) or dollar sign ‘$’ characters, but not recommended.
+* Variable names should be short yet meaningful.
 * Should be mnemonic i.e, designed to indicate to the casual observer the intent of its use.
 * <b>One-character variable names should be avoided</b> except for temporary variables.
-* Common names for temporary variables are i, j, k, m, and n for integers; c, d, and e for characters.
+* Common names for temporary `variables` are `i`, `j`, `k`, `m`, and `n` for `integers`; `c`, `d`, and `e` for characters.
 
         int i;
         char c;
@@ -35,9 +36,10 @@ Java uses CamelCase as a practice for writing names of methods, variables, class
 * Should be all uppercase with words separated by underscores (“_”).
 * There are various constants used in predefined classes like Float, Long, String etc.
 
-        static final int MIN_WIDTH = 4;
-        
-        // Some  Constant variables used in predefined Float class
+      static final int MIN_WIDTH = 4;
+  
+* Some  Constant variables used in predefined Float class
+
         public static final float POSITIVE_INFINITY = 1.0f / 0.0f;
         public static final float NEGATIVE_INFINITY = -1.0f / 0.0f;
         public static final float NaN = 0.0f / 0.0f;
@@ -49,7 +51,3 @@ Java uses CamelCase as a practice for writing names of methods, variables, class
         com.sun.eng
         com.apple.quicktime.v2
         java.lang
-
-<b>6. Source</b>
-
-See also: https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html
