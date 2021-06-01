@@ -7,6 +7,8 @@ It is possible to pass data, also called parameters, to a method.
 
 Methods are used to reuse code: define the code once and use it multiple times.
 
+From the main method you call the different methods.
+
 ### Method declaration explained
 
     public static void main (String[] args) {    
