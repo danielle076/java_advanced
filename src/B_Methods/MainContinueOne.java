@@ -1,8 +1,8 @@
 package B_Methods;
 
-public class ContinueMainOne {
+public class MainContinueOne {
     public static void main(String[] args) {
-        // you don't have to write out variables separately anymore, you do that at the calculateScore2 method
+        // step 4: you don't have to write out variables separately anymore, you do that at the calculateScore2 method
         calculateScore2(true, 500, 3, 100); // Your final score was 1800
         calculateScore2(true, 5000, 6, 500); // Your final score was 9000
     }

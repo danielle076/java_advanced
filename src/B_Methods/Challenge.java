@@ -1,6 +1,6 @@
 package B_Methods;
 
-public class MainChallenge {
+public class Challenge {
 
     public static void main(String[] args) {
         int highScorePosition = calculateHighScorePosition(1500);

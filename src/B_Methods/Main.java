@@ -3,8 +3,6 @@ package B_Methods;
 public class Main {
 
     public static void main(String[] args) {
-        // a method ensures that you only need to write a code once and can reuse it every time
-
         // step 1: make variables
         boolean gameOver = true;
         int score = 800;
@@ -19,8 +17,7 @@ public class Main {
     }
 
     // step 2: create a method calculateScore
-    // you can't put a method in another method, so you create a new one
-    // make him inside the public class
+    // you can't put a method in another method, so you create a new one make him inside the public class
     // between () are the variables of the first method main
     public static void calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
 
