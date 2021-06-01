@@ -1,4 +1,4 @@
-package Packages.Sample;
+package Packages;
 
 import java.awt.*;
 import java.awt.event.WindowAdapter;
@@ -10,7 +10,7 @@ import java.awt.event.WindowEvent;
 // there are two different packages here: there's java.awt and there's java.awt.event
 
 public class MyWindow extends Frame {
-        public MyWindow(String title) {
+    public MyWindow(String title) {
         super(title);
         setSize(500, 140);
         addWindowListener(new WindowAdapter() {

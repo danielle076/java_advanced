@@ -1,14 +1,15 @@
 
 **In the src folder you will find the following:**
 1. If then else
-2. Methods + challenge
-3. Method Overloading + challenge
-4. Switch + challenges
+B. Methods + challenge
+C. Method Overloading + challenge
+D. Switch + challenges
+5. File Input/Output
 5. For Statement + challenges
 6. While and Do While + challenges
 7. Parsing values from String
 8. Reading User Input
-9. H_ClassAndObjects
+H. ClassAndObjects
 10. Constructor
 11. Inheritance
 12. Array + challenge
@@ -18,12 +19,14 @@
 16. Polymorphism
 17. Interfaces
 18. Abstract Classes
-19. Packages
+19. Class Library    
+19. Packages    
 20. Scope
 21. Access Modifiers + challenge
 22. Static Statement
 23. Final Statement
-24. Naming Conventions
+W. Naming Conventions
+25. Debugging    
 25. JUnit
 
 

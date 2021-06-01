@@ -1,8 +1,8 @@
-package Packages.Packages;
+package Packages;
 
 import javax.xml.soap.Node;
 
-public class Main {
+public class Example1 {
 
     public static void main(String[] args) {
         // package is a way of grouping related classes and interfaces together

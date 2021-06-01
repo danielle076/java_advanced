@@ -1,6 +1,6 @@
-package Packages.Sample;
+package Packages;
 
-public class Main {
+public class Example2 {
 
     public static void main(String[] args) {
         MyWindow myWindow = new MyWindow("Complete Java");
