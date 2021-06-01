@@ -1,6 +1,6 @@
-package MehodOverloading;
+package C_MehodOverloading;
 
-public class MainChallenge {
+public class Challenge {
 
     public static void main(String[] args) {
         double centimeters = calcFeetAndInchesToCentimeters(5, 0);
