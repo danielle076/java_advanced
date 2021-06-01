@@ -1,6 +1,6 @@
 ## File Input/Output
 
-Within Java several solutions to create, modify or read files.
+Within Java there are several solutions to create, modify or read files.
 
 If you are going to work with files with Java, you should think of simple text files that you want to fill with data, you generally use the `java.io` package.
 
