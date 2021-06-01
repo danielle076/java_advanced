@@ -1,8 +1,6 @@
 package Array;
 
-// arrays: data structure that allows you to store sequence of values, that are all of the same type
-
-public class BasicsArrays {
+public class Example1 {
     public static void main(String[] args) {
         // declaring an array initially is similar to declaring a regular variable
         int myVariableInt = 50;
@@ -43,6 +41,7 @@ public class BasicsArrays {
         // called through in the loop. We're assigning i times 10 to it. We're going right through for the entire array,
         // and going through so in the values
         int[] myVariableArray4 = new int[10];
+
         for (int i = 0; i < 10; i++) {
             myVariableArray4[i] = i * 10;
             System.out.println("Element " + i + ", value is " + myVariableArray4[i]);
@@ -63,6 +62,7 @@ public class BasicsArrays {
         // it's a good idea to use .length with arrays whenever you want to cycle through or figure out what the
         // length is rather than hard-coding a value = [10]
         int[] myVariableArray5 = new int[25]; // change [10] into [25]
+
         for (int i = 0; i < myVariableArray5.length; i++) {
             myVariableArray5[i] = i * 10;
             System.out.println("Number " + i + ", value is " + myVariableArray5[i]);

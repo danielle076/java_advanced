@@ -1,6 +1,6 @@
 package Array;
 
-public class Main {
+public class Example2 {
     public static void main(String[] args) {
         String[] bakkerstraat = new String[4];
 
