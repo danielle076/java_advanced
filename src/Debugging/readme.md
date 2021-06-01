@@ -8,7 +8,6 @@ Debugging is used to analyze and solve problems (bugs). This is a process that y
 
 ![img.png](img.png)        
 
-
 - Breakpoints are special markers, which indicate certain lines when the debugger should intervene and pause the program state
 
 - Run your program in debugging mode (the green "bug" icon within IntelliJ)
