@@ -1,4 +1,4 @@
-package Composition;
+package I_Composition;
 
 public class Main {
 

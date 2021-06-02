@@ -1,4 +1,4 @@
-package Composition;
+package I_Composition;
 
 public class Dimensions {
     // step 19: creating fields

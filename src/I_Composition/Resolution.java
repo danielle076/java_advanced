@@ -1,4 +1,4 @@
-package Composition;
+package I_Composition;
 
 public class Resolution {
     // step 11: creating fields

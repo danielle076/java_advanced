@@ -10,12 +10,12 @@ D. Switch + challenges
 7. Parsing values from String
 8. Reading User Input
 H. ClassAndObjects
-I. I_AssociativeRelationships   
+I. AssociativeRelationships 
+I. Composition
 10. Constructor
 11. Inheritance
 12. Array + challenge
 13. Arraylist
-14. Composition
 15. Encapsulation
 16. Polymorphism
 17. Interfaces

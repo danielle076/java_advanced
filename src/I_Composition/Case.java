@@ -1,4 +1,4 @@
-package Composition;
+package I_Composition;
 
 public class Case {
     // step 14: creating fields
