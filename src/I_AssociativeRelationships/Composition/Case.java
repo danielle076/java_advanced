@@ -1,4 +1,4 @@
-package I_Composition;
+package I_AssociativeRelationships.Composition;
 
 public class Case {
     // step 14: creating fields

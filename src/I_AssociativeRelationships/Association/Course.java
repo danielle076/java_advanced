@@ -1,4 +1,4 @@
-package nl.novi.opdracht2;
+package I_AssociativeRelationships.Association;
 
 public class Course {
     public String courseName;

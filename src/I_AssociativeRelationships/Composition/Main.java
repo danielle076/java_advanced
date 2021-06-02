@@ -1,4 +1,4 @@
-package I_Composition;
+package I_AssociativeRelationships.Composition;
 
 public class Main {
 

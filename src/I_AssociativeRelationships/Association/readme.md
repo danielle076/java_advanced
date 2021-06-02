@@ -1,40 +1,40 @@
-## Voorbeeld classes en objecten: associatie
+## Association
 
-### Stap 1:
-We hebben twee classes: `Student.java` met twee eigenschappen `firstName` en `lastName` en we hebben C`ourse.java` ook met twee eigenschappen `coursenName` en `courseNo`.
+### Step 1
+We have two classes: `Student.java` with two properties `firstName` and `lastName` and we have `Course.java` also with two properties `courseName` and `courseNo`.
 
-Daarnaast hebben we voor beide een get methode die informatie teruggeven, de ene `getFullName` en de ander `getCourseInfo`.
+In addition, for both we have a get method that return information, one `getFullName` and the other `getCourseInfo`.
 
-### Stap 2
-In `Main.java` maken we van de classes objecten.
+### Step 2
+In `Main.java` we turn the classes into objects.
 
-Object voor Student:
+Object for Student:
 
     Student student1 = new Student();
 
-Object voor Course:
+Object for Course:
 
     Course javaProgrammeren = new Course();
 
-`student1.firstName` krijgt de waarde Bob
+`student1.firstName` gets the value Bob
 
     student1.firstName = "Bob";
 
-`javaProgrammeren.courseName` krijgt de waarde Java Programmeren
+`javaProgrammeren.courseName` gets the value Java Programmeren
 
     javaProgrammeren.courseName = "Java Programmeren";
 
-### Stap 3
+### Step 3
 
-Aanroepen van de return in Student.java
+Calling the return in Student.java
 
     System.out.println("Student: " + student1.getFullName());
 
-Aanroepen van de return in Course.java
+Calling the return in Course.java
 
     System.out.println("Cursus: " + javaProgrammeren.getCourseInfor());
 
-### Volledige code
+### Full code
 
 <i>Student.java</i>
 
@@ -84,33 +84,33 @@ Aanroepen van de return in Course.java
 
 ![img.png](img.png)
 
-### Stap 4
+### Step 4
 
-We gaan de objecten koppelen, we willen aangeven dat Bob een bepaalde cursus volgt. We hebben nu twee objecten die geen relatie met elkaar hebben. Bob kan maar één cursus tegelijkertijd volgen.
+We're going to link the objects, we want to indicate that Bob is taking a particular course. We now have two objects that have no relationship to each other. Bob can only take one course at a time.
 
-We maken in Student.java onze eigen variable type Course aan.
+We create our own variable type Course in Student.java.
 
     public Course currentCourse;
 
-Nu heeft hij een relatie met de klasse Course.java, maar hij wordt nog niet ingevuld. We maken een nieuwe methode aan in Student.java.
+Now it has a relationship with the class Course.java, but it is not completed yet. We create a new method in Student.java.
 
     public String getStudentAndCourseInfo(){
         return getFullName() + " volgt " + currentCourse.getCourseInfor();
     }
 
-Deze methode geeft de student informatie en de cursus informatie weer.
+This method displays the student information and the course information.
 
-### Stap 5
+### Step 5
 
-In Main.java wijzen we javaProgrammeren toe aan student1.
+In Main.java, we assign javaProgrammeren to student1.
 
     student1.currentCourse = javaProgrammeren;
 
-Het aanroepen van getStudentAndCourseInfo.
+Calling getStudentAndCourseInfo.
 
     System.out.println(student1.getStudentAndCourseInfo());
 
-### Volledige code
+### Full code
 
 <i>Student.java</i>
 
@@ -156,7 +156,7 @@ Het aanroepen van getStudentAndCourseInfo.
 
 ### Step 6
 
-Stel je hebt meerdere studenten, dan ga je de volgende code uit Main.java elke keer herhalen, `student1` wordt `student2`.
+Suppose you have multiple students, then you are going to repeat the following code from Main.java every time, `student1` becomes `student2`.
 
     package nl.novi.opdracht2;
     
@@ -188,33 +188,33 @@ Stel je hebt meerdere studenten, dan ga je de volgende code uit Main.java elke k
 
 ### Step 7
 
-We maken een ArrayList van het type Student.
+We create an ArrayList of type Student.
 
     ArrayList<Student> studenten = new ArrayList<>();
 
-De package van ArrayList wordt door IntelliJ automatisch geïmporteerd.
+The package of ArrayList is automatically imported by IntelliJ.
 
     import java.util.ArrayList;
 
-We voegen de studenten toe aan de ArrayList.
+We add the students to the ArrayList.
 
     studenten.add(student1);
     studenten.add(student2);
 
 ### Step 8
 
-Het aanroepen van de studenten dat we handmatig doen:
+Calling the students that we did manually...
 
     System.out.println(student1.getStudentAndCourseInfo());
     System.out.println(student2.getStudentAndCourseInfo());
 
-Gaan we nu met een for loop doen. We gaan door de array heen loopen.
+...nut now we're going to do this with a for loop. We're going to loop through the array.
 
     for (int i = 0; i < studenten.size(); i++) {
         System.out.println(studenten.get(i).getStudentAndCourseInfo());
     }
 
-### Volledige code
+### Full code
 
     package nl.novi.opdracht2;
     

@@ -1,4 +1,4 @@
-package nl.novi.opdracht2;
+package I_AssociativeRelationships.Association;
 
 import java.util.ArrayList;
 
