@@ -1,4 +1,4 @@
-package Inheritance;
+package Inheritance.Example2;
 
 public class Animal {
     // step 1: fields/states all animals have
@@ -24,7 +24,7 @@ public class Animal {
 
     // step 14: new method. (int speed) means how fast the animal is
     public void move(int speed) {
-        System.out.println("Animal.move() called.  Animal is moving at " + speed);
+        System.out.println("Animal.move() called. Animal is moving at " + speed);
     }
 
     // step 3: getters
@@ -48,4 +48,3 @@ public class Animal {
         return weight;
     }
 }
-

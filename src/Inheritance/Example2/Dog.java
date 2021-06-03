@@ -1,4 +1,4 @@
-package Inheritance;
+package Inheritance.Example2;
 
     // step 4: if you want to inherit from another class, (you want to be able to access), you use the extends keyword
 public class Dog extends Animal {
@@ -24,7 +24,7 @@ public class Dog extends Animal {
         this.coat = coat;
     }
 
-    // step 12: a dog does not eat, but chew, so an unique private method
+    // step 12: a dog does not eat, but chew, so a unique private method
     private void chew() {
         System.out.println("Dog.chew() called");
     }
