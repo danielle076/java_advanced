@@ -2,7 +2,7 @@
 
 Suppose we have 2 separate classes with similar properties and methods.
 
-![img.png](img-01.png)
+![img_1.png](img_1.png)
 
 Code.
 
@@ -12,11 +12,20 @@ Inheritance allows you to put a class above Kat and Hond that you inherit certai
 
 We created a Huisdier class (superclass) that contains the shared methods of both classes. Kat and Hond still have their own constructor. Because they inherit from the Huisdier class, they automatically have access to `getNaam()` and `maakGeluid()` methods.
 
-![img.png](img-04.png)
+![img_2.png](img_2.png)
 
 Code.
 
-![img_2.png](img-03.png)
+![img_3.png](img_3.png)
+
+    public class Huisdier {
+    }
+    
+    public class Kat extends Huisdier {
+    }
+    
+    public class Hond extends Huisdier {
+    }
 
 ### Example1
 
