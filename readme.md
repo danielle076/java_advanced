@@ -9,6 +9,7 @@ H. ClassAndObjects
 - `I_AssociativeRelationships`
     - `Association`
     - `Composition`
+10. Constructor
 11. Inheritance
 16. Polymorphism
 17. Interfaces
@@ -23,15 +24,3 @@ H. ClassAndObjects
 - `W_Naming Conventions`
 25. Debugging    
 25. JUnit
-
-Basis
-F. Reading User Input
-1. If then else
-`D_Switch` + `Challenges`
-5. For Statement + challenges
-6. While and Do While + challenges     
-12. Array + challenge
-13. Arraylist
-10. Constructor
-
-
