@@ -1,6 +1,6 @@
 
-**In the src folder you will find the following:**
-1. If then else
+## In the src folder you will find the following
+
 - `B_Methods` + `Challenge`
 - `C_MethodOverloading` + `Challenge`
 - `D_Switch` + `Challenges`
@@ -16,11 +16,9 @@ H. ClassAndObjects
 10. Constructor
 11. Inheritance
 16. Polymorphism
-12. Array + challenge
-13. Arraylist
-15. Encapsulation
 17. Interfaces
 18. Abstract Classes
+15. Encapsulation
 19. Class Library    
 19. Packages    
 20. Scope
@@ -30,5 +28,10 @@ H. ClassAndObjects
 - `W_Naming Conventions`
 25. Debugging    
 25. JUnit
+
+Basis
+1. If then else
+12. Array + challenge
+13. Arraylist
 
 
