@@ -1,4 +1,46 @@
-**Abstract classes**
+## Abstract classes
+
+Abstract to a class indicates the class cannot be instantiated (i.e., no object can be created from the class). The idea behind this is that an abstract class is extended by other classes.
+
+Classes that inherit from an abstract class have a contract and are required to override the abstract methods from the superclass.
+
+An abstract class permits you to make functionality that subclasses can implement or override whereas an interface only permits you to state functionality but not to implement it. A class can extend only one abstract class while a class can implement multiple interfaces.
+
+When using an abstract class, use the word `extends`.
+
+> An abstract class has no use, no value and no reason to live.
+
+### Example
+
+Abstract class
+
+    abstract class Animal {
+      public abstract void animalSound();
+      public void sleep() {
+        System.out.println("Zzz");
+      }
+    }
+
+Abstract method `animalSound()` does not have a body. Method `sleep()` is a regular method.
+
+Subclass (inherit from Animal).
+
+    class Pig extends Animal {
+      public void animalSound() {
+        // The body of animalSound() is provided here
+        System.out.println("The pig says: wee wee");
+      }
+    }
+
+    class Main {
+      public static void main(String[] args) {
+        Pig myPig = new Pig(); // Create a Pig object
+        myPig.animalSound();
+        myPig.sleep();
+      }
+    }
+
+### Example2
 
 _Animal.java_ <br/>
 step 1: making the class abstract  <br/>
