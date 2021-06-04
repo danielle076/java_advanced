@@ -1,4 +1,4 @@
-package Interfaces.Interfaces2;
+package Interfaces.Example4;
 
 public interface ITelephone {
     void powerOn();

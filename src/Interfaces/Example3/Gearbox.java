@@ -1,4 +1,4 @@
-package Interfaces.Interfaces1;
+package Interfaces.Example3;
 
 public class Gearbox {
     private boolean clutchIsIn;

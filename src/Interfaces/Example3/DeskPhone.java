@@ -1,4 +1,4 @@
-package Interfaces.Interfaces1;
+package Interfaces.Example3;
 
 // step 6: implementing the interface
 public class DeskPhone implements ITelephone {

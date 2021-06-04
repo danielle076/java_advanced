@@ -1,4 +1,4 @@
-package Interfaces.Interfaces1;
+package Interfaces.Example3;
 
 public interface ITelephone {
     // public interface ITelephone: instead of class it says interface

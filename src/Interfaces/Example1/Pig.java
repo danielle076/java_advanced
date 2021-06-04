@@ -1,4 +1,4 @@
-package Interfaces;
+package Interfaces.Example1;
 
 public class Pig implements Animal {
     public void animalSound() {
