@@ -10,6 +10,8 @@ When using an abstract class, use the word `extends`.
 
 > An abstract class has no use, no value and no reason to live.
 
+Een abstracte klasse is een klasse die gebruik je nooit voor een concreet object. Je moet deze klasse altijd kunnen overerven.
+
 ### Example
 
 Abstract class

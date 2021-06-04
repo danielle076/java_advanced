@@ -1,4 +1,4 @@
-package AbstractClasses.Example2;
+package AbstractClasses.Example3;
 
 // step 14: Parrot extends from Bird
 public class Parrot extends Bird {
