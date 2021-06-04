@@ -3,17 +3,12 @@
 
 - `B_Methods` + `Challenge`
 - `C_MethodOverloading` + `Challenge`
-- `D_Switch` + `Challenges`
 5. File Input/Output
-5. For Statement + challenges
-6. While and Do While + challenges
 7. Parsing values from String
-8. Reading User Input
 H. ClassAndObjects
 - `I_AssociativeRelationships`
     - `Association`
     - `Composition`
-10. Constructor
 11. Inheritance
 16. Polymorphism
 17. Interfaces
@@ -30,8 +25,13 @@ H. ClassAndObjects
 25. JUnit
 
 Basis
+F. Reading User Input
 1. If then else
+`D_Switch` + `Challenges`
+5. For Statement + challenges
+6. While and Do While + challenges     
 12. Array + challenge
 13. Arraylist
+10. Constructor
 
 
