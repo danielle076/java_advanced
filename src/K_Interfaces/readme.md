@@ -1,14 +1,12 @@
-## Interfaces
+## K_Interfaces
 
-An interface is a special kind of class, which basically (except for any constants) has no attributes (properties, variables). An interface does have abstract methods.
+An interface is a special kind of class, which is actually not a class, you have to implement it before you can use it. When using an interface, use the word `implements`. It is possible to implement more than 1 interface.
 
-Het idee van een interface is dat je een soort raamwerk geeft die beschrijft de klasse die de interface gaat implementeren wat hij moet overnemen om te voldoen aan de interface.
+An interface has no attributes (properties, variables), except for any constants. It is a reference type in Java, it is similar to class, it is a collection of abstract methods.
 
-Bij het gebruik van een interface gebruik je het woordje `implements`.
+Writing an interface is similar to writing a class. But a class describes the attributes and behaviours of an object. And an interface contains behaviours that a class implements.
 
 When another class implements an interface, the abstract methods must be overridden.
-
-It is possible to implement multiple interfaces in 1 class. 
 
 It is possible to both inherit 1 other class, and implement 1 or more interfaces. 
 
@@ -23,7 +21,7 @@ Interface `Animal.java`
 
 The interface methods `animalSound()` and `sleep()` do not have a body.
 
-`Pig.java` "implements" the Animal interface
+`Pig.java` "implements" the Animal interface.
 
     class Pig implements Animal {
         public void animalSound() {

@@ -1,4 +1,4 @@
-package Interfaces.Example2;
+package K_Interfaces.Example2;
 
 public class Step implements Bestuurbaar {
 

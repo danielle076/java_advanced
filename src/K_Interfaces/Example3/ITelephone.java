@@ -1,4 +1,4 @@
-package Interfaces.Example3;
+package K_Interfaces.Example3;
 
 public interface ITelephone {
     // public interface ITelephone: instead of class it says interface

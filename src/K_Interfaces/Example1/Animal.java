@@ -1,4 +1,4 @@
-package Interfaces.Example1;
+package K_Interfaces.Example1;
 
 public interface Animal {
     public void animalSound(); // interface method (does not have a body)

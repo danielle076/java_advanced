@@ -1,4 +1,4 @@
-package Interfaces.Example1;
+package K_Interfaces.Example1;
 
 public class Pig implements Animal {
     public void animalSound() {

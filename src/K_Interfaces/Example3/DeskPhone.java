@@ -1,4 +1,4 @@
-package Interfaces.Example3;
+package K_Interfaces.Example3;
 
 // step 6: implementing the interface
 public class DeskPhone implements ITelephone {

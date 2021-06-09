@@ -1,4 +1,4 @@
-package Interfaces.Example4;
+package K_Interfaces.Example4;
 
 public class Main {
 

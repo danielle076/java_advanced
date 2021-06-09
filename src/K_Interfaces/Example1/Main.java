@@ -1,4 +1,4 @@
-package Interfaces.Example1;
+package K_Interfaces.Example1;
 
 public class Main {
     public static void main(String[] args) {
