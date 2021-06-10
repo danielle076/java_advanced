@@ -1,4 +1,4 @@
-package Scope;
+package M_Scope.Scope;
 
 public class Main {
 
