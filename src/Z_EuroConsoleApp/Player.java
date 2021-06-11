@@ -15,4 +15,11 @@ public class Player extends  Person {
     public void setPosition(int position) {
         this.position = position;
     }
+
+    @Override
+    public String toString() {
+        return super.toString() + "Player{" +
+                "position=" + position +
+                '}';
+    }
 }

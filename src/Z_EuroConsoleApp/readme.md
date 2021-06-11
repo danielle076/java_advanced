@@ -206,9 +206,13 @@ Deze ArrayList geeft op dit moment een lege lijst.
 
 ### Stap 15 toevoegen aan ArrayList
 
-Voordeel van de ArrayList persons is dat we person, player en coach kunnen toevoegen.
-
-
+Voordeel van de ArrayList persons is dat we person, player en coach kunnen toevoegen met `.add`: 
+`persons.add(person1);`
+`persons.add(person2);`
+`persons.add(person3);`
+`persons.add(player1);`
+`persons.add(player2);`
+`persons.add(coach1);`
 
     public void generatePerson(){
         Person person1 = new Person("Danielle", "van den Akker", 37);
@@ -217,4 +221,296 @@ Voordeel van de ArrayList persons is dat we person, player en coach kunnen toevo
 
         persons.add(person1);
         persons.add(person2);
+        persons.add(person2);
+    }
+
+    public void generatePlayers(){
+        Player player1 = new Player("Memphis", "Depay", 27, 9);
+        Player player2 = new Player("Donny", "van de Beek", 24, 20);
+        
+        persons.add(player1);
+        persons.add(player2);
+    }
+
+    public void generateCoach(){
+        Coach coach1 = new Coach("Frank", "de Boer", 51);
+        coach1.setRole("Hoofd coach");
+        
+        persons.add(coach1);
+    }
+
+### Stap 16 publieke methode printList maken
+
+De printList methode gaat door de lijst heen loopen en laat alle objecten binnen de lijst zien.
+
+We maken een tijdelijke variabele listSize aan die de size van de lijst opvraagt: `int listSize = persons.size();`. Deze is temporary variabele is tijdelijk en bestaat alleen in de for-loop.
+
+Met een for loop gaan we door de lijst heen loopen.
+
+We maken een tijdelijke variabele binnen de for-loop aan, die elke keer eentje van de lijst afhaalt en die tijdelijk kopieert en die je dan aanroept in de print: `Person tmpPerson = persons.get(i);`.
+
+    public void printList() {
+    int listSize = persons.size();
+
+        for (int i = 0; i < listSize; i++) {
+            Person tmpPerson = persons.get(i);
+            System.out.println(tmpPerson.getFirstName() + " " + tmpPerson.getLastName());
+        }
+    }
+
+### Stap 17 methodes in Main.java aanroepen
+
+Je roept alle methodes van AppController aan. De volgorde van printen is dezelfde volgorde als wat je in Main.java hebt staan.
+
+    package Z_EuroConsoleApp;
+    
+    public class Main {
+        public static void main(String args[]) {
+            AppController app = new AppController();
+            app.generateCoach();
+            app.generatePerson();
+            app.generatePlayers();
+            app.printList();
+        }
+    }
+
+![img.png](img.png)
+
+### Stap 18 toSTring
+
+De toString methode zorgt ervoor dat de verschillende methodes worden uitgeprint.
+
+<i>Player.java</i>
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "position=" + position +
+                '}';
+    }
+
+<i>Coach.java</i>
+
+    @Override
+    public String toString() {
+        return "Coach{" +
+                "role='" + role + '\'' +
+                '}';
+    }
+
+<i>Person.java</i>
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                '}';
+    }
+
+<i>AppController.java</i>
+
+In plaats van `tmpPerson.getFirstName() + " " + tmpPerson.getLastName()` aan te roepen hoef je nu alleen `tmpPerson` neer te zetten.
+
+    public void printList() {
+        int listSize = persons.size();
+
+        for (int i = 0; i < listSize; i++) {
+            Person tmpPerson = persons.get(i);
+            System.out.println(tmpPerson);
+        }
+    }
+
+![img_1.png](img_1.png)
+
+### Stap 19 super.toSTring()
+
+Om de ontbrekende informatie van firstName, lastName en age toe te voegen and Coach en Player gebruik je super.toString().
+
+<i>Coach.java</i>
+
+    @Override
+    public String toString() {
+        return super.toString() + "Coach{" +
+                "role='" + role + '\'' +
+                '}';
+    }
+
+<i>Player</i>
+
+    @Override
+    public String toString() {
+        return super.toString() + "Player{" +
+                "position=" + position +
+                '}';
+    }
+
+![img_2.png](img_2.png)
+
+### Volledige code
+
+<i>Person.java</i>
+
+    package Z_EuroConsoleApp;
+    
+    public class Person {
+    private String firstName;
+    private String lastName;
+    private int age;
+    
+        public Person(String firstName, String lastName, int age) {
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.age = age;
+        }
+    
+        public String getFirstName() {
+            return firstName;
+        }
+    
+        public void setFirstName(String firstName) {
+            this.firstName = firstName;
+        }
+    
+        public String getLastName() {
+            return lastName;
+        }
+    
+        public void setLastName(String lastName) {
+            this.lastName = lastName;
+        }
+    
+        public int getAge() {
+            return age;
+        }
+    
+        public void setAge(int age) {
+            this.age = age;
+        }
+    
+        @Override
+        public String toString() {
+            return "Person{" +
+                    "firstName='" + firstName + '\'' +
+                    ", lastName='" + lastName + '\'' +
+                    ", age=" + age +
+                    '}';
+        }
+    }
+
+<i>Player.java</i>
+
+    package Z_EuroConsoleApp;
+    
+    public class Player extends  Person {
+    private int position = 0;
+    
+        public Player(String firstName, String lastName, int age, int position) {
+            super(firstName, lastName, age);
+            this.position = position;
+        }
+    
+        public int getPosition() {
+            return position;
+        }
+    
+        public void setPosition(int position) {
+            this.position = position;
+        }
+    
+        @Override
+        public String toString() {
+            return super.toString() + "Player{" +
+                    "position=" + position +
+                    '}';
+        }
+    }
+
+<i>Coach.java</i>
+
+    package Z_EuroConsoleApp;
+    
+    public class Coach extends Person{
+    private String role = "";
+    
+        public Coach(String firstName, String lastName, int age) {
+            super(firstName, lastName, age);
+        }
+    
+        public String getRole() {
+            return role;
+        }
+    
+        public void setRole(String role) {
+            this.role = role;
+        }
+    
+        @Override
+        public String toString() {
+            return super.toString() + "Coach{" +
+                    "role='" + role + '\'' +
+                    '}';
+        }
+    }
+
+<i>AppController.java</i>
+
+    package Z_EuroConsoleApp;
+    
+    import java.util.ArrayList;
+    
+    public class AppController {
+    private ArrayList<Person> persons = new ArrayList<Person>();
+    
+        public AppController() {
+        }
+    
+        public void generatePerson() {
+            Person person1 = new Person("Danielle", "van den Akker", 37);
+            Person person2 = new Person("Freckle", "van den Akker", 2);
+            Person person3 = new Person("Frummel", "van den Akker", 1);
+    
+            persons.add(person1);
+            persons.add(person2);
+            persons.add(person3);
+        }
+    
+        public void generatePlayers() {
+            Player player1 = new Player("Memphis", "Depay", 27, 9);
+            Player player2 = new Player("Donny", "van de Beek", 24, 20);
+    
+            persons.add(player1);
+            persons.add(player2);
+        }
+    
+        public void generateCoach() {
+            Coach coach1 = new Coach("Frank", "de Boer", 51);
+            coach1.setRole("Hoofd coach");
+    
+            persons.add(coach1);
+        }
+    
+        public void printList() {
+            int listSize = persons.size();
+    
+            for (int i = 0; i < listSize; i++) {
+                Person tmpPerson = persons.get(i);
+                System.out.println(tmpPerson);
+            }
+        }
+    }
+
+<i>Main.java</i>
+
+    package Z_EuroConsoleApp;
+    
+    public class Main {
+        public static void main(String args[]) {
+            AppController app = new AppController();
+            app.generateCoach();
+            app.generatePerson();
+            app.generatePlayers();
+            app.printList();
+        }
     }
