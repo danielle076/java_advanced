@@ -1,4 +1,4 @@
-package Encapsulation.Encapsulation2;
+package O_Encapsulation.Encapsulation2;
 
 public class EnhancedPlayer {
     // step 6: creating variables

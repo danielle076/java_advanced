@@ -1,4 +1,4 @@
-package Encapsulation.Encapsulation;
+package O_Encapsulation.Encapsulation1;
 
 public class Player {
     // step 1: creating variables
