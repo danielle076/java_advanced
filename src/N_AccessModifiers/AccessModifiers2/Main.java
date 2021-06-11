@@ -1,4 +1,4 @@
-package AccessModifiers.AccessModifiers2;
+package N_AccessModifiers.AccessModifiers2;
 
 public class Main {
 

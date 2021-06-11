@@ -1,4 +1,4 @@
-package AccessModifiers.AccessModifiersChallenge;
+package N_AccessModifiers.Challenge;
 
 interface Accessible {
     int SOME_CONSTANT = 100;
