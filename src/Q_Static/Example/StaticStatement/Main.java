@@ -1,4 +1,4 @@
-package StaticStatement.StaticStatement;
+package Q_Static.Example.StaticStatement;
 
 public class Main {
 

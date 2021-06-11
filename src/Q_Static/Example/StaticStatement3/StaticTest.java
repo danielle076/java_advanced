@@ -1,7 +1,6 @@
-package StaticStatement.StaticStatement2;
+package Q_Static.Example.StaticStatement3;
 
 public class StaticTest {
-    // step 6: change 'private int numInstances = 0;' into 'private static int numInstances = 0;'
     private static int numInstances = 0;
     private String name;
 
@@ -10,7 +9,8 @@ public class StaticTest {
         numInstances++;
     }
 
-    public int getNumInstances() {
+    // step 10: change 'public int' into 'public static int'
+    public static int getNumInstances() {
         return numInstances;
     }
 

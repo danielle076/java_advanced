@@ -1,17 +1,15 @@
-package StaticStatement.StaticStatement;
+package Q_Static.Example.StaticStatement2;
 
 public class StaticTest {
-    // step 2: variables
-    private int numInstances = 0;
+    // step 6: change 'private int numInstances = 0;' into 'private static int numInstances = 0;'
+    private static int numInstances = 0;
     private String name;
 
-    // step 3: constructor
     public StaticTest(String name) {
         this.name = name;
         numInstances++;
     }
 
-    // step 4: getters
     public int getNumInstances() {
         return numInstances;
     }
