@@ -1,4 +1,4 @@
-package AbstractClasses.Example3;
+package L_AbstractClasses.Example3;
 
 // step 1: making the class abstract 'public abstract class'
 public abstract class Animal {

@@ -1,4 +1,4 @@
-package AbstractClasses.Example3;
+package L_AbstractClasses.Example3;
 
 // step 6: Dog extends from Animal
 public class Dog extends Animal {

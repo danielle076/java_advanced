@@ -1,4 +1,4 @@
-package AbstractClasses.Example3;
+package L_AbstractClasses.Example3;
 
 // step 18: Penguin extends from Bird
 public class Penguin extends Bird {

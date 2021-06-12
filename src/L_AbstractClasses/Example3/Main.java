@@ -1,4 +1,4 @@
-package AbstractClasses.Example3;
+package L_AbstractClasses.Example3;
 
 public class Main {
 

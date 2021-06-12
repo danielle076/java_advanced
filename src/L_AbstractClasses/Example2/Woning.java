@@ -1,4 +1,4 @@
-package AbstractClasses.Example2;
+package L_AbstractClasses.Example2;
 
 public abstract class Woning {
     // 3 attributen
