@@ -6,7 +6,7 @@ Use the same method name but with different parameters.
 
 Method `calculateScore` has been used three times and that is only possible because all three are unique.
 
-    package C_MehodOverloading;
+    package D_MethodOverloading;
     
     public class Main {
     
