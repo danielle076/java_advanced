@@ -23,3 +23,4 @@
 - `R_FinalStatement`
 - `S_NamingConventions`
 - `T_JUnit`
+- `Z_EuroConsoleApp`
