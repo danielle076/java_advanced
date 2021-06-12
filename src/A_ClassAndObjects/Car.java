@@ -1,4 +1,4 @@
-package H_ClassAndObjects;
+package A_ClassAndObjects;
 
 public class Car {
     // step 1: creating a field for a class

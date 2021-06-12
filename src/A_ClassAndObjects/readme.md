@@ -17,7 +17,7 @@ In Java, we use objects and classes to organize data.
 
 <i>Loop.java</i>
 
-    package H_ClassAndObjects;
+    package A_ClassAndObjects;
     
     public class Loop {
     
@@ -33,7 +33,7 @@ In Java, we use objects and classes to organize data.
 
 With `Loop loop1 = new Loop();` you create a new object.
 
-    package H_ClassAndObjects;
+    package A_ClassAndObjects;
     
     public class Main {
     
@@ -47,7 +47,7 @@ This is a `void` and returns no data.
 
 <i>Loop.java</i>
 
-    package H_ClassAndObjects;
+    package A_ClassAndObjects;
     
     public class Loop {
     
@@ -60,7 +60,7 @@ This is a `void` and returns no data.
 
 With `loop1.returnData();` it does nothing, you have to use `System.out.println()`.
 
-    package H_ClassAndObjects;
+    package A_ClassAndObjects;
     
     public class Main {
     
@@ -74,7 +74,7 @@ It's better to put `System.out.println()` in the Class, so as follows.
 
 <i>Loop.java</i>
 
-    package H_ClassAndObjects;
+    package A_ClassAndObjects;
     
     public class Loop {
     
@@ -89,7 +89,7 @@ It's better to put `System.out.println()` in the Class, so as follows.
 
 <i>Main.java</i>
 
-    package H_ClassAndObjects;
+    package A_ClassAndObjects;
     
     public class Main {
     
@@ -103,7 +103,7 @@ It is also possible to have a `parameter`, to which we can pass `data`.
 
 <i>Loop.java</i>
 
-    package H_ClassAndObjects;
+    package A_ClassAndObjects;
     
     public class Loop {
         public String returnData(String data){
@@ -117,7 +117,7 @@ It is also possible to have a `parameter`, to which we can pass `data`.
 
 <i>Main.java</i>
 
-    package H_ClassAndObjects;
+    package A_ClassAndObjects;
     
     public class Main {
     
@@ -168,7 +168,7 @@ Access modifiers:
 
 <i>Compleet Car.java code</i>
 
-    package H_ClassAndObjects;
+    package A_ClassAndObjects;
     
     public class Car {       
         private int doors;
@@ -188,7 +188,7 @@ Access modifiers:
 
 <i>Compleet Main.java code</i>
 
-    package H_ClassAndObjects;
+    package A_ClassAndObjects;
     
     public class Main {
     
