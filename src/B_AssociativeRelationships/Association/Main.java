@@ -1,4 +1,4 @@
-package I_AssociativeRelationships.Association;
+package B_AssociativeRelationships.Association;
 
 import java.util.ArrayList;
 

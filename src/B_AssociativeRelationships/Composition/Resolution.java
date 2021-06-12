@@ -1,4 +1,4 @@
-package I_AssociativeRelationships.Composition;
+package B_AssociativeRelationships.Composition;
 
 public class Resolution {
     // step 11: creating fields

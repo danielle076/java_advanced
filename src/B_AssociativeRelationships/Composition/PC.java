@@ -1,4 +1,4 @@
-package I_AssociativeRelationships.Composition;
+package B_AssociativeRelationships.Composition;
 
 public class PC {
     // step 22: create a class that is comprised of the case, the monitor, and the motherboard

@@ -1,4 +1,4 @@
-package I_AssociativeRelationships.Association;
+package B_AssociativeRelationships.Association;
 
 public class Student {
     public String firstName;
