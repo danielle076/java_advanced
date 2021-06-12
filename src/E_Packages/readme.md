@@ -23,7 +23,7 @@ Two ways to add a class:
 When are you doing option 2? When you have two different Node packages and Java give's an
 error to choise wich one to use: you are allowed to have 1 import package and use option 2
 
-      package Packages;
+      package E_Packages;
       
       import javax.xml.soap.Node;
       
@@ -38,7 +38,7 @@ error to choise wich one to use: you are allowed to have 1 import package and us
 
 <i>MyWindow.java</i>
 
-      package Packages;
+      package E_Packages;
       
       import java.awt.*;
       import java.awt.event.WindowAdapter;
@@ -78,7 +78,7 @@ this yourself, writing a window manager that creates fonts, that actually sets d
 
 <i>Example2.java</i>
 
-      package Packages;
+      package E_Packages;
       
       public class Example2 {
       
