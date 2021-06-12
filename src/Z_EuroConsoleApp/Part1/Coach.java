@@ -1,6 +1,6 @@
-package Z_EuroConsoleApp;
+package Z_EuroConsoleApp.Part1;
 
-public class Coach extends Person{
+public class Coach extends Person {
     private String role = "";
 
     public Coach(String firstName, String lastName, int age) {

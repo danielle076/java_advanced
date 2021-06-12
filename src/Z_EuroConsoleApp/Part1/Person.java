@@ -1,4 +1,4 @@
-package Z_EuroConsoleApp;
+package Z_EuroConsoleApp.Part1;
 
 public class Person {
     private String firstName;

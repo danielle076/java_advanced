@@ -1,11 +1,39 @@
-package Z_EuroConsoleApp;
+package Z_EuroConsoleApp.Part2;
 
 import java.util.ArrayList;
 
 public class AppController {
     private ArrayList<Person> persons = new ArrayList<Person>();
+    private ArrayList<Team> teams = new ArrayList<>();
 
     public AppController() {
+        this.generateHollandTeam();
+        this.printTeams();
+    }
+
+    public void generateHollandTeam(){
+        Team holland = new Team("Nederland", "NL");
+
+        Player player1 = new Player("Memphis", "Depay", 27, 9);
+        Player player2 = new Player("Donny", "van de Beek", 24, 20);
+
+        Coach coach1 = new Coach("Frank", "de Boer", 51);
+        coach1.setRole("Hoofd coach");
+
+        holland.addPlayer(player1);
+        holland.addPlayer(player2);
+
+        holland.addCoach(coach1);
+
+        teams.add(holland);
+        FileHandler.writeData(holland.toString());
+    }
+
+    public void printTeams() {
+        for (int i = 0; i < teams.size(); i++) {
+            Team tmpTeam = teams.get(i);
+            System.out.println(tmpTeam);
+        }
     }
 
     public void generatePerson() {

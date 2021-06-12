@@ -1,4 +1,4 @@
-package Z_EuroConsoleApp;
+package Z_EuroConsoleApp.Part2;
 
 public class Player extends  Person {
     private int position = 0;
