@@ -1,11 +1,7 @@
 package Q_Static.Example.StaticStatement4;
 
 public class Main {
-
-    // now that we understand static methods and fields, and these are sometimes referred to as class methods and
-    // class variables, we can work out why all the methods we've created in main have also been static
-
-    // step 12: field in this class
+    // step 12: public int multiplier = 7;
     // step 15: change 'public int' into 'public static int'
     public static int multiplier = 7;
 
@@ -23,8 +19,6 @@ public class Main {
     }
 
     // step 13: method multiply
-    // the public method multiply takes a number and returns the result of multiplying it with the public multiplier
-    // field that we defined on line 10.
     // step 16: change 'public int' into 'public static int'
     public static int multiply(int number) {
         return number * multiplier;
