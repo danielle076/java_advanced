@@ -55,7 +55,7 @@ Call the method with other values.
 
 Step 4: you don't have to write out variables separately anymore, you do that at the `calculateScore2` method.
 
-    package B_Methods;
+    package C_Methods;
     
     public class ContinueMainOne {
         public static void main(String[] args) {
@@ -75,7 +75,7 @@ Step 4: you don't have to write out variables separately anymore, you do that at
 
 Step 5: make `void` an `int`. so you can `return` information.
 
-    package B_Methods;
+    package C_Methods;
     
     public class ContinueMainTwo {
     public static void main(String[] args) {
