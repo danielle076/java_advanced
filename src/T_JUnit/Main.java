@@ -1,4 +1,4 @@
-package JUnit;
+package T_JUnit;
 
 // j unit is the testing framework that is going to be automating our tests
 

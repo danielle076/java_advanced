@@ -1,4 +1,4 @@
-package JUnit;
+package T_JUnit;
 
 public class BankAccount {
     // step 1: variables
