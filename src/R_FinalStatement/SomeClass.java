@@ -1,4 +1,4 @@
-package FinalStatement;
+package R_FinalStatement;
 
 public class SomeClass {
     // step 1: variables

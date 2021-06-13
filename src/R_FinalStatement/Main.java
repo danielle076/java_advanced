@@ -1,4 +1,4 @@
-package FinalStatement;
+package R_FinalStatement;
 
 // final statement: you use that generally to define constant values
 // but also if you want to prevent that a class can be extended, that a method can be overridden or that the value of a

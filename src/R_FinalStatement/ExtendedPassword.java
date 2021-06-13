@@ -1,4 +1,4 @@
-package FinalStatement;
+package R_FinalStatement;
 
 // step 15: what would prevent us for someone from extending the Password class and then changing the Method itself
 public class ExtendedPassword extends Password {
