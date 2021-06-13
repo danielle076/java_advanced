@@ -2,7 +2,6 @@ package O_Encapsulation.Encapsulation1;
 
 public class Player {
     // step 1: creating variables
-    // we are using public instead of private
     public String name;
     public int health;
     public String weapon;
