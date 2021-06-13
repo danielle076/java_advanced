@@ -164,15 +164,15 @@ It makes it clear now, because you're saying that it's the class name, and it's 
 
 Static methods and fields belong to the class, not to instances of the class, and as a result, can be called by referencing the class name, as you see here, rather than a class instance. This explains why the main method we've used throughout the course has to be static.
 
-### Example StaticStatement4
+### Example Static
 
 Now that we understand static methods and fields, and these are sometimes referred to as class methods and class variables, we can work out why all the methods we've created in main have also been static.
 
-#### Step 12: Main.java
+#### Step 01: Main.java
 
     public int multiplier = 7;
 
-#### Step 13: Method multiply Main.java
+#### Step 02: Method multiply Main.java
 
 The public method multiply takes a number and returns the result of multiplying it with the public multiplier field that we defined on line 10.
 
@@ -180,7 +180,7 @@ The public method multiply takes a number and returns the result of multiplying 
         return number * multiplier;
     }
 
-#### Step 14: Call the method Main.java
+#### Step 03: Call the method Main.java
 
 Gives an error: 'Non-static method multiply int can't be referenced from a static context.'
 
@@ -194,12 +194,14 @@ Normal class fields require an instance of the class that don't actually exist u
         System.out.println("Multiplier is " + multiplier);
     }
 
-#### Step 15: Change into static Main.java
+#### Step 04: Change into static Main.java
 
     public static int multiplier = 7;
 
-#### Step 16: Change into static
+#### Step 05: Change into static
 
     public static int multiply(int number) {
         return number * multiplier;
     }
+
+![img_3.png](img_3.png)
