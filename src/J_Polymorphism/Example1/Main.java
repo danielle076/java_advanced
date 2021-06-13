@@ -1,4 +1,4 @@
-package J_Polymorphism;
+package J_Polymorphism.Example1;
 
 class Main {
     public static void main(String[] args) {
