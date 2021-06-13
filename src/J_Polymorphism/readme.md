@@ -1,8 +1,8 @@
-## Polymorphism
+## J_Polymorphism
 
-Polymorphism means <i>many forms</i>>, and it occurs when we have many classes that are related to each other by inheritance.
+J_Polymorphism means <i>many forms</i>>, and it occurs when we have many classes that are related to each other by inheritance.
 
-Inheritance lets us inherit attributes and methods from another class. Polymorphism uses those methods to perform different tasks. This allows us to perform a single action in different ways.
+Inheritance lets us inherit attributes and methods from another class. J_Polymorphism uses those methods to perform different tasks. This allows us to perform a single action in different ways.
 
 For example, think of a superclass called `Animal` that has a method called `animalSound()`. Subclasses of Animals could be `Pigs`, `Dogs` - And they also have their own implementation of an animal sound (the pig oinks, and the cat barks, etc.):
 

@@ -1,4 +1,4 @@
-package Polymorphism;
+package J_Polymorphism;
 
 class Dog extends Animal {
     public void animalSound() {

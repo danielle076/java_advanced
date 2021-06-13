@@ -1,4 +1,4 @@
-package Polymorphism.Example2;
+package J_Polymorphism.Example2;
 
 // polymorphism is the method or the mechanism in object oriented programming, that allows actions to act differently
 // based on the actual object that the action is being performed on

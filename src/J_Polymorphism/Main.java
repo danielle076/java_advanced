@@ -1,4 +1,4 @@
-package Polymorphism;
+package J_Polymorphism;
 
 class Main {
     public static void main(String[] args) {
