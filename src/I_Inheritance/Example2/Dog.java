@@ -1,4 +1,4 @@
-package Inheritance.Example2;
+package I_Inheritance.Example2;
 
     // step 4: if you want to inherit from another class, (you want to be able to access), you use the extends keyword
 public class Dog extends Animal {

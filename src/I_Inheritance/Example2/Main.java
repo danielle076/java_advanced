@@ -1,4 +1,4 @@
-package Inheritance.Example2;
+package I_Inheritance.Example2;
 
 public class Main {
 

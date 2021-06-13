@@ -1,4 +1,4 @@
-package Inheritance.Example1;
+package I_Inheritance.Example1;
 
 class Rabbit extends Pet {
     private String color;

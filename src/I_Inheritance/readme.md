@@ -8,7 +8,7 @@ Code.
 
 ![img_1.png](img-02.png)
 
-Inheritance allows you to put a class above Kat and Hond that you inherit certain methods from: a superclass `Huisdier`. The classes that inherit are called subclasses (Kat and Hond).
+I_Inheritance allows you to put a class above Kat and Hond that you inherit certain methods from: a superclass `Huisdier`. The classes that inherit are called subclasses (Kat and Hond).
 
 We created a Huisdier class (superclass) that contains the shared methods of both classes. Kat and Hond still have their own constructor. Because they inherit from the Huisdier class, they automatically have access to `getNaam()` and `maakGeluid()` methods.
 
@@ -224,7 +224,7 @@ Step 15: use method 'move' from Animal. How does a dog move? Walk and run - Dog.
 
 <i>Animal.java</i>
 
-    package Inheritance.Example2;
+    package I_Inheritance.Example2;
     
     public class Animal {        
         private String name;
@@ -272,7 +272,7 @@ Step 15: use method 'move' from Animal. How does a dog move? Walk and run - Dog.
 
 <i>Dog.java</i>
 
-    package Inheritance.Example2;
+    package I_Inheritance.Example2;
     
     public class Dog extends Animal {
         private int eyes;
@@ -314,7 +314,7 @@ Step 15: use method 'move' from Animal. How does a dog move? Walk and run - Dog.
 
 <i>Main.java</i>
 
-    package Inheritance.Example2;
+    package I_Inheritance.Example2;
     
     public class Main {
     
