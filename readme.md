@@ -19,7 +19,7 @@
 - `N_AccessModifiers` + `Challenge`    
 - `O_Encapsulation`
 - `P_Constructor`
-- `Q_Static_Statement`
+- `Q_Static`
 - `R_FinalStatement`
 - `S_NamingConventions`
 - `T_JUnit`
