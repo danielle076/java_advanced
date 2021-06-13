@@ -2,14 +2,6 @@ package N_AccessModifiers.AccessModifiers1;
 
 public class Main {
 
-    /*  Access Modifiers:
-        private
-        public
-        protected
-        package private  */
-
-    // step 1: create class Account.java
-
     public static void main(String[] args) {
         // step 8: doing transactions
         // everything's public in the Account class (account name, balance and transactions) and this allows any program

@@ -18,5 +18,3 @@ public class Main {
         daniellesAccount.calculateBalance();
     }
 }
-
-// step 12: you can't define a private class at top level. So let's try and do that: we create a new private class PrivateClass.java
