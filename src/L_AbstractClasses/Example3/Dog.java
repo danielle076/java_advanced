@@ -9,7 +9,6 @@ public class Dog extends Animal {
     }
 
     // step 8: override methods
-    // add System.out.println
     @Override
     public void eat() {
         System.out.println(getName() + " is eating");
@@ -18,7 +17,6 @@ public class Dog extends Animal {
     @Override
     public void breathe() {
         System.out.println("Breathe in, breathe out, repeat");
-
     }
 }
 

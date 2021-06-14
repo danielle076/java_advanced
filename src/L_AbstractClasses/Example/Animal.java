@@ -1,4 +1,4 @@
-package L_AbstractClasses;
+package L_AbstractClasses.Example;
 
 public abstract class Animal {
     // Abstract method (does not have a body)

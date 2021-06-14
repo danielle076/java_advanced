@@ -21,11 +21,3 @@ public abstract class Animal {
     }
 }
 
-// we're gonna inherit from this abstract class. It's going to let us define behaviors that are necessary, without
-// specifying how they are to be performed
-
-// with interface you saw that the entire interface was abstract, and there's no implementation whatsoever.
-// there's no opportunity for us to enter fields. There wasn't any opportunity for us to enter any other code. We purely
-// were able just to specify the methods that were gonna be used for that interface, that a class that was implementing
-// that particular interface had to actually fulfil in order to make it valid. But as you can see in the case of Animal,
-// we can mix it up. We can add fields, we can add regular methods, or a constructor

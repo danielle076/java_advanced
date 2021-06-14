@@ -1,4 +1,4 @@
-package L_AbstractClasses;
+package L_AbstractClasses.Example;
 
 public class Main {
     public static void main(String[] args) {

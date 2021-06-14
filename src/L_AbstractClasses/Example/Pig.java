@@ -1,4 +1,4 @@
-package L_AbstractClasses;
+package L_AbstractClasses.Example;
 
 public class Pig extends Animal {
     public void animalSound() {
