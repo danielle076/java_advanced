@@ -1,12 +1,84 @@
-**Interfaces2**
+## Example4
 
-_MobilePhone.java_ <br/>
-step 1: implementing the interface <br/>
-step 2: implement methods <br/>
-step 3: create variables <br/>
-step 4: create constructor <br/>
+<i>ITelephone.java</i>
 
-_Main.java_ <br/>
-step 5: create an instance
+    public interface ITelephone {
+        void powerOn();
+    
+        void dial(int phoneNumber);
+    
+        void answer();
+    
+        boolean callPhone(int phoneNumber);
+    
+        boolean isRinging();
+    }
 
+<i>MobilePhone.java</i>
 
+    public class MobilePhone implements ITelephone {
+
+        private int myNumber;
+        private boolean isRinging;
+        private boolean isOn = false;
+
+        public MobilePhone(int myNumber) {
+            this.myNumber = myNumber;
+        }
+
+        @Override
+        public void powerOn() {
+            isOn = true;
+            System.out.println("Mobile phone powered up");
+        }
+    
+        @Override
+        public void dial(int phoneNumber) {
+            if(isOn) {
+                System.out.println("Now ringing " + phoneNumber + " on mobile phone.");
+            } else {
+                System.out.println("Phone is switched off");
+            }
+        }
+    
+        @Override
+        public void answer() {
+            if(isRinging) {
+                System.out.println("Answering the mobile phone");
+                isRinging = false;
+            }
+        }
+    
+        @Override
+        public boolean callPhone(int phoneNumber) {
+            if(phoneNumber == myNumber && isOn) {
+                isRinging = true;
+                System.out.println("Melody ring");
+            } else {
+                isRinging = false;
+                System.out.println("Mobile phone not on or number different");
+            }
+    
+            return isRinging;
+        }
+    
+        @Override
+        public boolean isRinging() {
+            return isRinging;
+        }
+    }
+
+<i>Main.java</i>
+
+    public class Main {
+    
+        public static void main(String[] args) {
+            ITelephone timsPhone;
+            timsPhone = new MobilePhone(24565);
+            timsPhone.powerOn(); // Mobile phone not on or number different when this is not written
+            timsPhone.callPhone(24565);
+            timsPhone.answer();
+        }
+    }
+
+![img.png](img.png)

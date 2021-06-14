@@ -1,21 +1,14 @@
 package K_Interfaces.Example4;
 
-// step 1: implementing the interface
 public class MobilePhone implements ITelephone {
-
-    // step 3: create variables
     private int myNumber;
     private boolean isRinging;
     private boolean isOn = false;
 
-    // step 4: create constructor
     public MobilePhone(int myNumber) {
         this.myNumber = myNumber;
     }
 
-    // step 2: implement methods
-    // create System.out.println
-    // you need to implement ALL the methods from the interface
     @Override
     public void powerOn() {
         isOn = true;
@@ -24,7 +17,7 @@ public class MobilePhone implements ITelephone {
 
     @Override
     public void dial(int phoneNumber) {
-        if(isOn) {
+        if (isOn) {
             System.out.println("Now ringing " + phoneNumber + " on mobile phone.");
         } else {
             System.out.println("Phone is switched off");
@@ -33,7 +26,7 @@ public class MobilePhone implements ITelephone {
 
     @Override
     public void answer() {
-        if(isRinging) {
+        if (isRinging) {
             System.out.println("Answering the mobile phone");
             isRinging = false;
         }
@@ -41,7 +34,7 @@ public class MobilePhone implements ITelephone {
 
     @Override
     public boolean callPhone(int phoneNumber) {
-        if(phoneNumber == myNumber && isOn) {
+        if (phoneNumber == myNumber && isOn) {
             isRinging = true;
             System.out.println("Melody ring");
         } else {

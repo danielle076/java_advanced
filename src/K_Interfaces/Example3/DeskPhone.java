@@ -13,8 +13,6 @@ public class DeskPhone implements ITelephone {
     }
 
     // step 7: implement methods
-    // create System.out.println
-    // you need to implement ALL the methods from the interface
     @Override
     public void powerOn() {
         System.out.println("No action taken, desk phone does not have a power button");
