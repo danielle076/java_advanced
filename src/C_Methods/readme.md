@@ -97,6 +97,20 @@ Step 5: make `void` an `int`. so you can `return` information.
 
 You put `return -1` because with this you say that if the outcome is negative, it comes out at this line, there is always something in it. Algorithms negative 1 indicates an invalid value or a value not found so
 
+## Challenge 1
+
+Write a method that receives an Integer.
+
+If the number is divisible by 5, have it return the following text: `divisible by five`.
+
+When the number is not divisible by five: `indivisible by five`.
+  
+    public class DivisibleByFive {        
+        public static void main(String[] args) {
+            int chosenNumber = 44;
+        }
+    }
+
 ## Challenge
  
 Create a method called `displayHighScorePosition`. This has a player name as a parameter, and a second parameter as the position in the high score table. <br/>
