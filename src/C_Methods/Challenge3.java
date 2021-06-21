@@ -1,6 +1,6 @@
 package C_Methods;
 
-public class Challenge {
+public class Challenge3 {
 
     public static void main(String[] args) {
         int highScorePosition = calculateHighScorePosition(1500);
