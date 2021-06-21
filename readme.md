@@ -5,7 +5,7 @@
 - `B_AssociativeRelationships`
   - `Association`
   - `Composition`
-- `C_Methods` + `Challenge`
+- `C_Methods` + `Challenges`
 - `D_MethodOverloading` + `Challenge`
 - `E_Packages`
 - `F_ClassLibrary`
