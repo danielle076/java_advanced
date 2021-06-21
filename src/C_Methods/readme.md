@@ -113,20 +113,20 @@ When the number is not divisible by five: `indivisible by five`.
 
 ## Challenge 2
 
-Schrijf een methode die twee Integers ontvangt. De eerste parameter heet `number`, de tweede `divisible`. Het is de bedoeling dat je checkt of `number` deelbaar is door `divisible`.
+Write a method that receives two Integers. The first parameter is called `number`, the second `divisible`. The idea is to check whether `number` is divisible by `divisible`.
 
-Wanneer het deelbaar is, return het volgende: Het getal: %HIER GETAL% is deelbaar door %HIER DIVISIBLE%.
+If it is divisible, return the following: The number: %HERE NUMBER% is divisible by %HERE DIVISIBLE%.
 
-Wanneer het niet deelbaar is: Het getal: %HIER GETAL% is niet deelbaar door %HIER DIVISIBLE%. Verlaag of verhoog het getal
-%HET GETAL WAARMEE HET VERHOOGT OF VERLAAGD MOET WORDEN%
+If it is not divisible: The number: %HERE NUMBER% is not divisible by %HERE DIVISIBLE%. Decrease or increase the number
+%THE NUMBER BY WHICH IT IS TO BE INCREASED OR DECREASED%
 
-VOORBEELD:<br/>
-De methode ontvangt de getallen 13 en 3, dan zou het resultaat moeten zijn:<br/>
-Het getal: 13 is niet deelbaar door 3. Verlaag het getal met 1.
+EXAMPLE:<br/>
+The method receives the numbers 13 and 3, then the result should be:<br/>
+The number: 13 is not divisible by 3. Reduce the number by 1.
 
-VOORBEELD 2:<br/>
-De methode ontvangt de getallen 14 en 3, dan zou het resultaat moeten zijn:<br/>
-Het getal: 14 is niet deelbaar door 3. Verhoog het getal met 1.
+EXAMPLE 2:<br/>
+The method receives the numbers 14 and 3, then the result should be:<br/>
+The number: 14 is not divisible by 3. Increase the number by 1.
 
     public class DivisibleByX {
     }
