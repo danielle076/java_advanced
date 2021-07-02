@@ -11,7 +11,7 @@
 - `F_ClassLibrary`
 - `G_Debugging`
 - `H_FileInputOutput`
-- `I_Inheritance`
+- `I_Inheritance` + `Challenge`
 - `J_Polymorphism`
 - `K_Interfaces`
 - `L_AbstractClasses`
