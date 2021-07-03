@@ -331,7 +331,7 @@ Step 15: use method 'move' from Animal. How does a dog move? Walk and run - Dog.
 
 ![img_1.png](img-05.png)
 
-## Challenge
+## Challenge 1
 
 Look at the code below. There are two class, two objects. SpaceXRocket extends Rocket.
 
@@ -343,8 +343,8 @@ You only need to modify code in `SpaceXRocket`.
 
 <i>Main.java</i>
 
-    import I_Inheritance.Challenge.overerving.Rocket;
-    import I_Inheritance.Challenge.overerving.SpaceXRocket;
+    import I_Inheritance.Challenge1.overerving.Rocket;
+    import I_Inheritance.Challenge1.overerving.SpaceXRocket;
     
     public class Main {
         public static void main(String[] args) {
@@ -409,3 +409,93 @@ You only need to modify code in `SpaceXRocket`.
             super(maximumFuel);
         }
     }
+
+## Challenge 2
+
+Look at the code below. There are two class, two objects.
+ApolloRocket extends Rocket.
+
+The ApolloRocket is special. When it is instantiated, we must also pass in the number of engines. Modify the constructor.
+
+Next, create an ApolloRocket object in this class and call the `toString()` method.
+
+<i>Main.java</i>
+
+    import I_Inheritance.Challenge2.overerving.ApolloRocket;
+    import I_Inheritance.Challenge2.overerving.Rocket;
+    
+    public class Main {
+    
+        public static void main(String[] args) {
+            Rocket genericRocket = new Rocket(100);
+    
+            genericRocket.fly(10);
+            System.out.println(genericRocket.toString());
+        }
+    }
+
+<i>ApolloRocket.java</i>
+
+    public class ApolloRocket extends Rocket {
+    
+        public int amountOfRocketEngines;
+    
+        // Here we call the constructor of Rocket
+        public ApolloRocket(int maximumFuel) {
+            super(maximumFuel);
+        }
+    
+        @Override
+        public String toString() {
+            StringBuilder sb = new StringBuilder(super.toString());
+    
+            sb.append("\r\n"); // New line
+    
+            sb.append("This rocket has " + this.amountOfRocketEngines + " rocket engines");
+    
+            return sb.toString();
+        }
+    }
+
+<i>Rocket.java</i>
+
+    public class Rocket {
+    
+        public int maximumFuel;
+        public int currentFuel;
+        public int height = 0;
+    
+        public Rocket(int maximumFuel) {
+            this.maximumFuel = maximumFuel;
+            this.currentFuel = maximumFuel;
+        }
+    
+        public void fly(int fuel) {
+            int metersFlown = 0;
+            if(hasEnoughFuel(fuel)) {
+                metersFlown = calculateMetersFlown(fuel);
+                decreaseFuel(fuel);
+            }
+            this.height = height + metersFlown;
+        }
+    
+        public int calculateMetersFlown(int fuel) {
+            return fuel * 100;
+        }
+    
+        public void decreaseFuel(int fuel) {
+            currentFuel = currentFuel - fuel;
+        }
+    
+        public boolean hasEnoughFuel(int fuel) {
+            if(fuel < currentFuel) {
+                return true;
+            } return false;
+        }
+    
+        @Override
+        public String toString() {
+            return "The Rocket is flying at an altitude of " + this.height + " meters.";
+        }
+    }
+

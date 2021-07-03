@@ -1,4 +1,4 @@
-package I_Inheritance.Challenge.overerving;
+package I_Inheritance.Challenge1.overerving;
 
 public class SpaceXRocket extends Rocket {
     // Here we call the constructor of Rocket

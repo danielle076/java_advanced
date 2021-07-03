@@ -1,7 +1,7 @@
-package I_Inheritance.Challenge;
+package I_Inheritance.Challenge1;
 
-import I_Inheritance.Challenge.overerving.Rocket;
-import I_Inheritance.Challenge.overerving.SpaceXRocket;
+import I_Inheritance.Challenge1.overerving.Rocket;
+import I_Inheritance.Challenge1.overerving.SpaceXRocket;
 
 public class Main {
     public static void main(String[] args) {

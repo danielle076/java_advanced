@@ -1,6 +1,7 @@
-package I_Inheritance.Challenge.overerving;
+package I_Inheritance.Challenge2.overerving;
 
 public class Rocket {
+
     public int maximumFuel;
     public int currentFuel;
     public int height = 0;
@@ -12,7 +13,7 @@ public class Rocket {
 
     public void fly(int fuel) {
         int metersFlown = 0;
-        if (hasEnoughFuel(fuel)) {
+        if(hasEnoughFuel(fuel)) {
             metersFlown = calculateMetersFlown(fuel);
             decreaseFuel(fuel);
         }
@@ -28,10 +29,9 @@ public class Rocket {
     }
 
     public boolean hasEnoughFuel(int fuel) {
-        if (fuel < currentFuel) {
+        if(fuel < currentFuel) {
             return true;
-        }
-        return false;
+        } return false;
     }
 
     @Override
