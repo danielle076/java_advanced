@@ -499,3 +499,80 @@ Next, create an ApolloRocket object in this class and call the `toString()` meth
         }
     }
 
+## Challenge 3
+
+Look at the code below. There are two class, two objects. FalconRocket extends Rocket.
+
+This assignment consists of two elements. The first element is to practice. The second element is a challenging assignment.
+
+Element 1: <br/>
+The FalconRocket has spare fuel (extraFuel). When the rocket doesn't seem to have enough fuel, you need to check if there is enough fuel in extraFuel to make up for the shortage. If there is, `true` must be returned. 
+
+Element 2 (Challenge): <br/>
+After extra fuel has been used, it must of course also be reduced. Add this to the code.
+
+<i>Main.java</i>
+
+    import I_Inheritance.Challenge3.overerving.FalconRocket;
+    import I_Inheritance.Challenge3.overerving.Rocket;
+    
+    public class Main {
+        public static void main(String[] args) {
+            Rocket genericRocket = new Rocket(100);
+    
+            genericRocket.fly(10);
+            System.out.println(genericRocket.toString());
+        }
+    }
+
+<i>Rocket.java</i>
+
+    public class Rocket {
+    
+        public int maximumFuel;
+        public int currentFuel;
+        public int height = 0;
+    
+        public Rocket(int maximumFuel) {
+            this.maximumFuel = maximumFuel;
+            this.currentFuel = maximumFuel;
+        }
+    
+        public void fly(int fuel) {
+            int metersFlown = 0;
+            if(hasEnoughFuel(fuel)) {
+                metersFlown = calculateMetersFlown(fuel);
+                decreaseFuel(fuel);
+            }
+            this.height = height + metersFlown;
+        }
+    
+        public int calculateMetersFlown(int fuel) {
+            return fuel * 100;
+        }
+    
+        public void decreaseFuel(int fuel) {
+            currentFuel = currentFuel - fuel;
+        }
+    
+        public boolean hasEnoughFuel(int fuel) {
+            if(fuel < currentFuel) {
+                return true;
+            } return false;
+        }
+    
+        @Override
+        public String toString() {
+            return "The Rocket is flying at an altitude of " + this.height + " meters.";
+        }
+    }
+
+<i>FalconRocket.java</i>
+
+    public class FalconRocket extends Rocket {
+        public int extraFuel = 10;
+    
+        public FalconRocket(int maximumFuel) {
+            super(maximumFuel);
+        }
+    }
