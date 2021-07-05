@@ -576,3 +576,35 @@ After extra fuel has been used, it must of course also be reduced. Add this to t
             super(maximumFuel);
         }
     }
+
+## Challenge 4
+
+Look at the description of the animals below. Think about what you can put in the superclass. You don't have to create the subclasses yet.
+
+- For a _Lion_ we store the name, name of the pen, sex, weekday it was last fed, country of origin and the number of children.
+
+- For a _Tiger_ we record the name, name of the pen, sex, day of the week it was last fed and country of origin. We also want to know the number of stripes.
+
+- Of a _Dog_ we store name, owner's name, favorite food brand, gender and species.
+
+- Of a _Cat_ we store the name, name of the owner, favorite food brand, sex and species. We also want to know if it is an indoor or outdoor cat.
+
+- Of a _Wolf_ we store the name, name of the pen, gender, weekday it was last fed and country of origin. We also want to know the name of the pack.
+
+All animals must be able to move. This should be added as a method. When an animal moves you print in the console that it has moved 0.25 meters.
+
+All animals should also have a make-sound method by which you print the sound of the animals to the console.
+
+All animals sleep 8 hours a day. Create a method sleep and print it out when the method is called.
+
+All animals eat. Create a method that receives a String and then print out what the animal eats.
+
+<i>AnimalMain.java</i>
+
+    public class AnimalMain {    
+    }
+
+<i>Animal</i>
+
+    public class Animal {
+    }
